@@ -39,7 +39,7 @@ const recipes = [
 const Slider = () => {
   return (
     <>
-      <div className="py-10">
+      <section className="pt-10">
         <Swiper
           modules={[Navigation]}
           spaceBetween={30}
@@ -53,24 +53,24 @@ const Slider = () => {
               <div className="flex flex-col gap-y-5 lg:gap-0 lg:flex-row items-center bg-blue-50 rounded-3xl">
                 {/* Left Content */}
                 <div className="w-full lg:w-1/2 ps-[7%] p-6 space-y-4">
-                  <button className="shadow-custom flex items-center gap-2 bg-white text-black text-sm leading-none text-inter tracking-[-0.02em] font-semibold px-5 py-[11px] rounded-[30px]">
+                  <button className="shadow-custom flex items-center gap-2 bg-white text-black text-sm leading-none font-inter tracking-[-0.02em] font-semibold px-5 py-[11px] rounded-[30px]">
                     <img src={Book} alt="Book" className="w-6" />
                     Hot Recipes
                   </button>
-                  <h2 className="font-inter text-4xl lg:text-[40px] xl:text-[64px] leading-none tracking-[-0.04em] font-semibold m-0 pt-4">
+                  <h1 className="font-inter text-4xl lg:text-[40px] xl:text-[64px] leading-none tracking-[-0.04em] font-semibold m-0 pt-4">
                     {recipe.title}
-                  </h2>
-                  <p className="text-inter py-4 text-base leading-7 text-[#00000099]">
+                  </h1>
+                  <p className="font-inter py-4 text-base leading-7 text-[#00000099]">
                     Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqut
                     enim ad minim
                   </p>
                   <div className="flex space-x-3">
-                    <span className="flex items-center gap-2 bg-[#0000000D] px-4 py-2 text-sm leading-none tracking-[-0.02em] rounded-[30px] text-inter font-medium text-[#00000099]">
+                    <span className="flex items-center gap-2 bg-[#0000000D] px-4 py-2 text-sm leading-none tracking-[-0.02em] rounded-[30px] font-inter font-medium text-[#00000099]">
                       <img src={Timer} alt="Timer" />
                       {recipe.time}
                     </span>
-                    <span className="flex items-center gap-2 bg-[#0000000D] px-4 py-2 text-sm leading-none tracking-[-0.02em] rounded-[30px] text-inter font-medium text-[#00000099]">
+                    <span className="flex items-center gap-2 bg-[#0000000D] px-4 py-2 text-sm leading-none tracking-[-0.02em] rounded-[30px] font-inter font-medium text-[#00000099]">
                       <img src={Fork} alt="Fork" />
                       {recipe.category}
                     </span>
@@ -83,15 +83,15 @@ const Slider = () => {
                         alt="John"
                       />
                       <div>
-                        <p className="text-inter text-base leading-none tracking-[-0.02em] text-[#000000] mb-2 font-bold">
+                        <p className="font-inter text-base leading-none tracking-[-0.02em] text-[#000000] mb-2 font-bold">
                           {recipe.author}
                         </p>
-                        <p className="text-inter text-sm leading-none tracking-[-0.02em] text-[#00000099] font-medium">
+                        <p className="font-inter text-sm leading-none tracking-[-0.02em] text-[#00000099] font-medium">
                           {recipe.date}
                         </p>
                       </div>
                     </div>
-                    <button className="inline-flex items-center gap-2 bg-black text-white px-9 py-4 text-inter text-sm leading-none tracking-[-0.02em] rounded-[16px]">
+                    <button className="inline-flex items-center gap-2 bg-black text-white px-9 py-4 font-inter text-sm leading-none tracking-[-0.02em] rounded-[16px]">
                       View Recipes
                       <img src={Play} alt="PlayCircle" />
                     </button>
@@ -112,7 +112,7 @@ const Slider = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+      </section>
     </>
   );
 };

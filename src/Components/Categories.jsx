@@ -41,21 +41,21 @@ const categories = [
 
 const Categories = () => {
   return (
-    <div>
-      <div className="max-w-[1340px] mx-auto py-10 lg:py-[110px] px-4 md:px-[30px]">
-        <div className="flex justify-between">
+    <section>
+      <div className="container-custom py-10 md:py-16 xl:py-[110px]">
+        <div className="flex items-center justify-between">
           <div className="heading">
-            <h3 className="text-inter text-5xl leading-none tracking-[-0.04em] text-[#000000] font-semibold">
+            <h3 className="font-inter text-3xl md:text-4xl lg:text-5xl leading-none tracking-[-0.04em] text-[#000000] font-semibold">
               Categories
             </h3>
           </div>
           <div className="categories">
-            <button className="rounded-2xl bg-[#E7FAFE] py-[21px] px-[27px] text-inter text-base text-[#000000] leading-none font-semibold tracking-[-0.02em]">
+            <button className="rounded-2xl bg-[#E7FAFE] py-[21px] px-[27px] font-inter text-base text-[#000000] leading-none font-semibold tracking-[-0.02em]">
               View All Categories
             </button>
           </div>
         </div>
-        <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-10 text-center">
+        <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-5 lg:gap-10 text-center">
           {categories.map((cat, index) => (
             <div
               key={index}
@@ -71,7 +71,7 @@ const Categories = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

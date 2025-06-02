@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        lobster: ["Lobster", "sans-serif"],
       },
       boxShadow: {
         custom: "10px 20px 40px 0px #2940461A;",
@@ -19,6 +20,8 @@ module.exports = {
           "linear-gradient(180deg, rgba(240, 158, 0, 0) 0%, rgba(240, 158, 0, 0.1) 100%)",
         "custom-gradient5":
           "background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%)",
+        "custom-hero":
+          "linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%)",
       },
     },
   },
