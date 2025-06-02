@@ -75,7 +75,7 @@ const Slider = () => {
                       {recipe.category}
                     </span>
                   </div>
-                  <div className="flex pt-7 xl:pt-24 items-center justify-between">
+                  <div className="flex flex-wrap sm:flex-nowrap gap-4 pt-7 xl:pt-24 items-center justify-between">
                     <div className="flex items-center space-x-4">
                       <img
                         className="w-[50px] h-[50px] rounded-full"

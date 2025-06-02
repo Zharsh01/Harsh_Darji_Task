@@ -7,7 +7,7 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <nav className="sticky top-0 z-50 bg-white border-b-[1px] border-[#ECECEC]">
-      <div className="py-8 flex justify-between items-center container-custom">
+      <div className="py-6 md:py-8 flex justify-between items-center container-custom">
         <div className="flex">
           <Link to="/" className="flex">
             <img

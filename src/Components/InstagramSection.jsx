@@ -49,7 +49,7 @@ const InstagramSection = () => {
           tempor incididunt ut labore et dolore magna aliqut enim ad minim
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 pt-6 md:pt-10 lg:pt-20 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 pt-6 md:pt-10 lg:pt-20 gap-6 md:gap-10">
           {cards.map((card, idx) => (
             <InstagramCard key={idx} {...card} />
           ))}

@@ -72,7 +72,7 @@ const recipes = [
 
 const FoodCategory = () => {
   return (
-    <section className="py-6 sm:py-10 md:py-20 lg:py-40">
+    <section className="py-8 sm:py-10 md:py-20 lg:py-40">
       <div className="container-custom">
         <div className="text-center flex flex-wrap lg:flex-nowrap gap-4 lg:justify-between items-center mb-5 sm:mb-10 lg:mb-20">
           <div className="top-heading w-full lg:max-w-[507px]">
